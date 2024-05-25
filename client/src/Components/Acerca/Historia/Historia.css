@@ -1,0 +1,127 @@
+.historia-contenedor {
+    min-height: 40vh;
+    display: flex;
+    font-family: 'Poppins';
+    flex-wrap: wrap; /* Esto permite que los elementos se ajusten si no hay suficiente espacio */
+    border-bottom: 0.05em solid #70707070;
+  }
+  
+  .historia-left {
+    margin-top: 5%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    gap: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+    line-height: 1.2;
+    margin-bottom: 5%;
+  }
+  
+  .historia-left h2 {
+    color: #333333;
+    font-size: 40px;
+    font-weight: 700;
+  }
+  
+  .historia-left p {
+    color: #707070;
+    font-size: 15px;
+    font-weight: 400;
+  }
+  
+  .conocenos-btn {
+    display: flex;
+    gap: 15px;
+    width: 310px;
+  }
+  
+  .conocenos-btn button {
+    width: 100px;
+    height: 35px;
+    outline: none;
+    border: 1px solid #222222;
+    border-radius: 8px;
+    color: #FFFFFF;
+    font-family: 'Poppins';
+    font-size: 12px;
+    font-weight: 500;
+    background: #222222;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px #8890917c;
+  }
+  
+  .conocenos-btn button:hover {
+    transform: scale(1.07);
+  }
+  
+  .conocenos-btn button:active {
+    background-color: #FFFFFF;
+    color: #222222;
+    border: 1px solid #222222;
+  }
+  
+  .historia-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centra la imagen en el contenedor */
+    min-height: 40vh; /* Asegura una altura mínima para el contenedor */
+  }
+  
+  .historia-right img {
+    width: 100%; /* Establece el ancho al 100% del contenedor */
+    height: 100%; /* Establece la altura al 100% del contenedor */
+    object-fit: cover; /* Asegúrate de que la imagen cubra todo el contenedor */
+  }
+  
+  /* Estilos responsivos para pantallas con un ancho máximo de 1024px */
+  @media (max-width: 1024px) {
+    .historia-left {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+  
+    .historia-left h2 {
+      font-size: 32px;
+    }
+  
+    .historia-left p {
+      font-size: 14px;
+    }
+  }
+  
+  /* Estilos responsivos para pantallas con un ancho máximo de 768px */
+  @media (max-width: 768px) {
+    .historia-contenedor {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .historia-left {
+      padding-left: 20px;
+      padding-right: 20px;
+      align-items: center;
+    }
+  
+    .historia-left h2 {
+      font-size: 24px;
+    }
+  
+    .historia-left p {
+      font-size: 14px;
+    }
+  
+    .historia-right {
+      width: 100%;
+      padding: 20px;
+    }
+  
+    .historia-right img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  

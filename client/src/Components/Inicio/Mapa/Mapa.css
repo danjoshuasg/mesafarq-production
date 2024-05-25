@@ -1,0 +1,54 @@
+.mapa-container {
+  width: 100%; /* Ajusta el ancho como desees */
+  height: auto; /* Ajusta la altura como desees */
+  margin: 0 auto;
+  padding: 60px 0; /* Solo añade padding vertical */
+  text-align: center;
+  border-bottom: 0.05em solid #70707070;
+  font-family: 'Poppins';
+}
+
+.mapa-container h2 {
+  color: #333333;
+  font-size: 40px;
+  font-weight: 700; /* La unidad no es 'px' para 'font-weight', solo números */
+}
+
+.mapa {
+  display: flex;
+  justify-content: center; /* Esto centrará el hijo iframe horizontalmente */
+  align-items: center;
+  margin-top: 20px;
+  height: 450px; /* Altura del iframe si quieres que `.mapa` tenga una altura fija */
+}
+
+.mapa iframe {
+  border: 0; /* No necesita ser inline-style */
+  width: 600px; /* Ancho fijo para el iframe */
+  height: 450px; /* Altura fija para el iframe */
+  max-width: 100%; /* Asegúrate de que no sobrepase el ancho del contenedor en pantallas pequeñas */
+}
+
+/* Estilos responsivos para pantallas con un ancho máximo de 1024px */
+@media (max-width: 1024px) {
+  .mapa-container h2 {
+    font-size: 32px;
+  }
+
+  .mapa iframe {
+    width: 80%; /* Ajusta el ancho del iframe */
+    height: 400px; /* Ajusta la altura del iframe */
+  }
+}
+
+/* Estilos responsivos para pantallas con un ancho máximo de 768px */
+@media (max-width: 768px) {
+  .mapa-container h2 {
+    font-size: 24px;
+  }
+
+  .mapa iframe {
+    width: 100%; /* Ancho completo en pantallas pequeñas */
+    height: 300px; /* Ajusta la altura del iframe */
+  }
+}

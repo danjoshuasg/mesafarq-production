@@ -1,0 +1,79 @@
+.contenedor-gestion-cadena {
+    min-height: 40vh;
+    display: flex;
+    font-family: 'Poppins';
+    flex-wrap: wrap; /* Esto permite que los elementos se ajusten si no hay suficiente espacio */
+    border-bottom: 0.05em solid #70707070;
+}
+
+.gestion-cadena-right{
+    margin-top: 5%;
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    gap: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+    line-height: 1.2;
+    margin-bottom: 5%;
+
+}
+
+.gestion-cadena-right{
+    color: #333333;
+    font-size: 40px;
+    font-weight: 700;
+
+}
+
+.gestion-cadena-right p{
+    color: #707070;
+    font-size: 15px;
+    font-weight: 400;
+    
+}
+
+
+.gestion-cadena-left {
+    /* Elimina width: 50% si quieres que .resumen-right ocupe el espacio restante después de .resumen-left */
+    flex: 1; /* Ocupa todo el espacio disponible en el contenedor padre */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centra la imagen en el contenedor */
+    min-height: 40vh; /* Asegura una altura mínima para el contenedor */
+}
+
+.gestion-cadena-left img {
+    width: 100%; /* Establece el ancho al 100% del contenedor */
+    height: 100%; /* Establece la altura al 100% del contenedor */
+    object-fit: cover; /* Asegúrate de que la imagen cubra todo el contenedor */
+}
+
+.btn-ver-servicios {
+    width: 100px;
+    height: 35px;
+    outline: none;
+    border: 1px solid #222222;
+    border-radius: 8px;
+    color: #FFFFFF;
+    font-family: 'Poppins';
+    font-size: 12px;
+    font-weight: 500;
+    background: #222222;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px #8890917c;
+    display: block; /* Esto asegura que el botón no esté dentro de un flex container */
+    margin: 20px 0; /* Añade margen superior e inferior si es necesario */
+}
+
+.btn-ver-servicios:hover {
+    transform: scale(1.07);
+}
+
+.btn-ver-servicios:active {
+    background-color: #FFFFFF;
+    color: #222222;
+    border: 1px solid #222222;
+}

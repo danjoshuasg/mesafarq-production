@@ -1,0 +1,26 @@
+[
+    {
+        "nombre": "Control de Calidad",
+        "descripcion": "Implementamos prácticas de control de calidad robustas y eficientes en la industria de insumos médicos.",
+        "contenidoMarkdown": "# Control de Calidad\n\nDetalles extensos sobre control de calidad...",
+        "imagen": "consultoria.png"
+    },
+    {
+        "nombre": "Calificación de Salas",
+        "descripcion": "Certificamos salas limpias y controladas para asegurar la integridad del proceso y producto.",
+        "contenidoMarkdown": "# Calificación de Salas\n\nDetalles extensos sobre calificación de salas...",
+        "imagen": "consultoria.png"
+    },
+    {
+        "nombre": "Calificación de Equipos",
+        "descripcion": "Verificamos que los equipos cumplan con las especificaciones técnicas y normativas vigentes.",
+        "contenidoMarkdown": "# Calificación de Equipos\n\nDetalles extensos sobre calificación de equipos...",
+        "imagen": "consultoria.png"
+    },
+    {
+        "nombre": "Mapeos Térmicos",
+        "descripcion": "Realizamos mapeos térmicos para validar la uniformidad de las condiciones de temperatura.",
+        "contenidoMarkdown": "# Mapeos Térmicos\n\nDetalles extensos sobre mapeos térmicos...",
+        "imagen": "consultoria.png"
+    }
+]

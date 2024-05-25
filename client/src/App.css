@@ -28,6 +28,28 @@
   color: #61dafb;
 }
 
+*::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 50%; /* Establecer el radio de la esquina para la barra de desplazamiento completa */
+}
+
+*::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 50%; /* Esquinas redondeadas para el track */
+}
+
+*::-webkit-scrollbar-thumb {
+  /*background: linear-gradient(#01D6F6, #009BFC);  Usar colores del logo para el thumb */
+  border-radius: 50%; /* Esquinas redondeadas para el thumb */
+}
+
+/* Para Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color:  #009BFC; /* Usar colores del logo para el thumb y el track */
+}
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

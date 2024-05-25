@@ -1,0 +1,106 @@
+.ProductosInicio {
+  text-align: center;
+  background-color: #ffffff;
+  padding: 20px;
+  font-family: 'Poppins';
+}
+
+.ProductosInicio h2 {
+  color: #333333;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.ProductosInicio-Contenedor {
+  display: flex;
+  justify-content: center; /* Cambiado de 'space-around' a 'center' */
+  flex-wrap: wrap; /* Agrega esta línea si quieres que las tarjetas se ajusten al cambiar el tamaño de la pantalla */
+}
+
+.ProductoInicio {
+  width: 20%; /* Reducido para hacer las tarjetas más delgadas */
+  padding: 20px; /* Reducido para disminuir la separación interna */
+  text-align: left;
+  background-color: #f2f2f2;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px; /* Añade un margen para separar las tarjetas cuando estén juntas */
+}
+
+.ProductoInicio h3 {
+  color: #333333;
+  font-size: 20px; /* 'size' se cambió a 'font-size', que es la propiedad correcta */
+  text-align: center; /* Esta línea centra el texto de los h3 */
+}
+
+.ProductoInicio .texto-contenedor {
+  padding: 0 40px;
+}
+
+.ProductoInicio p {
+  color: #666666;
+  text-align: center;
+}
+
+.ProductoInicio button {
+  width: 100px;
+  height: 35px;
+  outline: none;
+  border: 1px solid #222222;
+  border-radius: 8px;
+  color: #FFFFFF;
+  font-family: 'Poppins';
+  font-size: 12px;
+  font-weight: 500;
+  background: #222222;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px #8890917c;
+  display: block;
+  margin: 15px auto 0;
+}
+
+.ProductoInicio button:hover {
+  transform: scale(1.07);
+}
+
+.ProductoInicio button:active {
+  background-color: #FFFFFF;
+  color: #222222;
+  border: 1px solid #222222;
+}
+
+/* Estilos responsivos para pantallas con un ancho máximo de 1024px */
+@media (max-width: 1024px) {
+  .ProductoInicio {
+    width: 30%;
+  }
+
+  .ProductosInicio h2 {
+    font-size: 32px;
+  }
+}
+
+/* Estilos responsivos para pantallas con un ancho máximo de 768px */
+@media (max-width: 768px) {
+  .ProductoInicio {
+    width: 80%; /* Asegura que los cuadros de los productos se orienten de manera vertical */
+  }
+
+  .ProductosInicio h2 {
+    font-size: 24px;
+  }
+
+  .ProductoInicio h3 {
+    font-size: 18px;
+  }
+
+  .ProductoInicio p {
+    font-size: 16px;
+  }
+
+  .ProductoInicio button {
+    width: 150px;
+    height: 40px;
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,33 @@
+.carousel-wrapper {
+  width: 100%; /* Asegura que el carrusel no exceda el ancho del viewport */
+  margin: auto;
+  overflow: hidden; /* Esto previene el scroll horizontal si los elementos son demasiado anchos */
+  border-bottom: 0.05em solid #70707070;
+}
+
+.box {
+  width: 30%; /* Esto asume que siempre mostrarás 4 slides. Ajusta el número según tus settings de slidesToShow */
+  height: 100%;
+  padding: 10%; /* Esto añade algo de espacio alrededor de cada caja para evitar que las imágenes se toquen entre sí */
+  box-sizing: border-box; /* Asegura que el padding no aumente el ancho total del .box */
+  display: flex; /* Usa flexbox para centrar el contenido dentro de .box */
+  justify-content: center; /* Centra el contenido horizontalmente */
+  align-items: center; /* Centra el contenido verticalmente */
+  margin-bottom: 10%;
+  margin-top: 10%;
+}
+
+/* Ajusta .carousel-content para asegurarte de que usa todo el espacio disponible en .box */
+.carousel-content {
+  width: 100%; /* Usa todo el ancho disponible */
+  height: 100%; /* Usa todo el alto disponible */
+  display: flex; /* Activa flexbox */
+}
+
+.carousel-content img {
+  width: 100%; /* Esto asegura que la imagen se ajuste al ancho de .carousel-content */
+  height: auto; /* Mantiene la relación de aspecto de la imagen */
+  max-height: 100%; /* Asegura que la imagen no exceda el alto de .carousel-content */
+  filter: grayscale(100%);
+  opacity: 0.5;
+}

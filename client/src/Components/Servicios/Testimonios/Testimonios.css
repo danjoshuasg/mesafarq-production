@@ -1,0 +1,47 @@
+/* Testimonios.css */
+.testimonios {
+    text-align: center;
+    padding: 50px 0; /* Añade el relleno superior e inferior que prefieras */
+    background-color: #f5f5f5; /* Cambia el color de fondo según tu diseño */
+    color: #333; /* Cambia el color del texto según tu diseño */
+    font-family: 'Poppins';
+  }
+  
+  .testimonial-container {
+    display: inline-block; /* Centra el contenedor en la página */
+    max-width: 600px; /* Ajusta el ancho máximo según tus necesidades */
+    margin: 0 auto; /* Margen automático para centrar horizontalmente */
+  }
+  
+  .testimonial-container blockquote {
+    font-style: italic;
+    color: #555; /* Cambia el color del texto de la cita según tu diseño */
+    padding: 20px; /* Añade el relleno que prefieras */
+    border-left: 5px solid #01D6F6; /* Cambia el color y el tamaño del borde izquierdo */
+    margin: 20px 0; /* Margen superior e inferior */
+  }
+  
+  .testimonial-author {
+    display: flex;
+    justify-content: center; /* Alinea horizontalmente los elementos de autor */
+    align-items: center; /* Alinea verticalmente los elementos de autor */
+    gap: 15px; /* Espacio entre la foto y la info del autor */
+  }
+  
+  .author-photo {
+    width: 50px; /* Ajusta el tamaño de la foto según tus necesidades */
+    height: 50px; /* Asegúrate de que sea igual al ancho para que sea un círculo */
+    border-radius: 50%; /* Hace la foto circular */
+    object-fit: cover; /* Asegura que la foto cubra todo el espacio sin deformarse */
+  }
+  
+  .author-info p {
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  .author-info p:nth-child(2) {
+    font-weight: normal;
+    color: #888; /* Cambia el color del nombre de usuario según tu diseño */
+  }
+  
