@@ -15,17 +15,13 @@
   }
   
   .nav-logo img {
-    width: 40px;
+    width: 60px;
     height: auto;
   }
   
-  .nav-logo p {
-    background: linear-gradient(#01D6F6, #009BFC);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-family: "Orbitron";
-    font-size: 20px;
-    font-weight: 1000;
+  .nav-texto-logo img{
+    width: 180px;
+    height: auto;
   }
   
   .nav-menu {

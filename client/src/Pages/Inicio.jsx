@@ -10,8 +10,6 @@ import image2 from '../Components/Assets/LogosAliados/pfizer - gray.png';
 import image3 from '../Components/Assets/LogosAliados/roche posay - gray.png';
 import image4 from '../Components/Assets/LogosAliados/Bayer - gray.png';
 
-{/*import Carousel from '../Components/Inicio/Carousel/Carousel.jsx';*/}
-{/*import EquipoMesafarq from '../Components/Inicio/EquipoMesafarq/EquipoMesafarq.jsx';*/}
 
 const images = [image1, image2, image3, image4];
 
@@ -19,7 +17,6 @@ const Inicio = () => {
   return (
     <div>
       <Resumen/>
-      {/*<Carousel images={images} />*/}
       <ProductosInicio/>
       <NumerosInicio/>
       <ServiciosInicio/>

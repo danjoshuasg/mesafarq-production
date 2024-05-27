@@ -5,6 +5,28 @@
     bottom: 0;
     font-family: 'Poppins';
   }
+  .footer-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+  .footer-logo img {
+    width: 60px; /* Ajusta el tamaño según tu necesidad */
+    height: auto;
+    filter: brightness(0) invert(1); /* Para cambiar el color a blanco */
+}
+
+.footer-texto-logo img {
+    width: 180px; /* Ajusta el tamaño según tu necesidad */
+    height: auto;
+    filter: brightness(0) invert(1); /* Para cambiar el color a blanco */
+}
+
+.footer-rights {
+    margin-top: 10px; /* Ajusta el margen según tu necesidad */
+    color: white; /* Asegura que el texto sea visible si tienes un fondo oscuro */
+}
   
   .footer-content {
     display: flex; /* Usar flexbox para alinear el contenido */
@@ -14,10 +36,6 @@
     margin: 0 auto; /* Centrar el contenido */
   }
 
-  .footer-content span{
-    font-family: "Orbitron";
-  }
-  
   .footer-links {
     display: flex; /* Usar flexbox para los enlaces */
     gap: 20px; /* Espacio entre los enlaces */

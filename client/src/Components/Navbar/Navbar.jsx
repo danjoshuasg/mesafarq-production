@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Navbar.css';
-import logo from '../Assets/logo.png';
+import logo from '../../img/navbar/logo_sin_letra.png';
+import mesafarq from '../../img/navbar/logo_letra.png';
 import { Link } from 'react-router-dom';
 import { List } from "@phosphor-icons/react";
 
@@ -39,8 +40,11 @@ const Navbar = () => {
     <div className='navbar'>
       <div className='nav-logo'>
         <img src={logo} alt="Logo"/>
-        <p>MESAFARQ</p>
+        <div className="nav-texto-logo">
+          <img src={mesafarq} alt="Mesafarq"/>
+        </div>
       </div>
+
       <ul className={`nav-menu ${isMobileMenuVisible ? "active" : ""}`}>
         <li onClick={() => handleMenuClick('Inicio')}><Link to="/">Inicio</Link>{menu === "Inicio" ? <hr/> : null}</li>
         <li onClick={() => handleMenuClick('Acerca')}><Link to="/acerca">Acerca</Link>{menu === "Acerca" ? <hr/> : null}</li>
