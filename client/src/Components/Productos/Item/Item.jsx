@@ -7,11 +7,10 @@ const Item = (props) => {
     return (
         <div className='item'>
             <img src={props.image} alt={props.name} />
-            <div className="item-name"><span>Nombre:</span><p>{props.name}</p></div>
+            <div className="item-name"><p>{props.name}</p></div>
 
             {showMore && ( // Solo muestra esta sección si showMore es true
                 <>
-                    <div className="item-detail"><span>Nombre:</span><p>{props.id}</p></div>
                     <div className="item-specifications"><span>Especificaciones:</span><p>{props.specifications}</p></div>
                     <div className="item-type"><span>Tipo:</span><p>{props.type}</p></div>
                 </>

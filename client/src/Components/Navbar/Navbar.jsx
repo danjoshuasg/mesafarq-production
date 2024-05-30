@@ -57,9 +57,9 @@ const Navbar = () => {
           <NavLink to="/servicios" activeClassName="active">Servicios</NavLink>
         </li>
         {isMobile && (
-          <li className="nav-agendar-cita" onClick={() => window.location.href='https://api.whatsapp.com/send/?phone=%2B51982053098&text&type=phone_number&app_absent=0'}>
-            <a>Agende una cita</a>
-          </li>
+        <div className="nav-agendar-cita-mobile">
+          <button onClick={() => window.location.href='https://api.whatsapp.com/send/?phone=%2B51982053098&text&type=phone_number&app_absent=0'}>Agende una cita</button>
+        </div>
         )}
       </ul>
       {!isMobile && (

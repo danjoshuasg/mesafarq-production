@@ -19,8 +19,7 @@ const Catalogo = () => {
 
   return (
     <div className="Catalogo">
-      <h1>Nuestros Productos</h1>
-      <hr />
+      <h1>NUESTROS PRODUCTOS</h1>
       <SearchBar 
         onKeywordChange={setSearchKeyword}
         onCategoryChange={setSelectedCategory}

@@ -8,16 +8,16 @@
   }
   
   .Catalogo h1 {
-    color: #707070;
-    font-size: 60px;
-    font-weight: 600;
+    color: #333333;
+    font-size: 40px;
+    font-weight: 700;
   }
   
   .Catalogo hr {
     width: 200px;
     height: 6px;
     border-radius: 10px;
-    background-color: #707070;
+    background-color: #333333;
   }
   
   .Catalogo-item {

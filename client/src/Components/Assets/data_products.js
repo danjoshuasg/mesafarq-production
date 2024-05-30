@@ -114,13 +114,6 @@ let data_product =[
         type: "Dental"
     },
 
-    {
-        id:10,
-        name: "Nuevo equipo dental",
-        specifications: "Dispositivo lubricante",
-        image: p10_img,
-        type: "Dental"
-    },
 
     {
         id:11,
@@ -347,12 +340,11 @@ let data_product =[
         type: "Veterinario"
     },
     {
-        id:1000,
+        id:38,
         name: "Termohigrómetro",
         specifications: "Medir la temperatura ",
         image: termohigrometro,
-        
-        type: "Veterinario"
+        type: "Instrumentos de medición"
     },
 
 ]

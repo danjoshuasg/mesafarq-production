@@ -67,7 +67,9 @@
 }
 
 .nav-agendar-cita button,
-.nav-agendar-cita a {
+.nav-agendar-cita a,
+.nav-agendar-cita-mobile button,
+.nav-agendar-cita-mobile a {
   width: 150px;
   height: 28px;
   outline: none;
@@ -85,16 +87,24 @@
 }
 
 .nav-agendar-cita button:hover,
-.nav-agendar-cita a:hover {
+.nav-agendar-cita a:hover,
+.nav-agendar-cita-mobile button:hover,
+.nav-agendar-cita-mobile a:hover {
   transform: scale(1.07);
   color: #FFFFFF;
 }
 
 .nav-agendar-cita button:active,
-.nav-agendar-cita a:active {
+.nav-agendar-cita a:active,
+.nav-agendar-cita-mobile button:active,
+.nav-agendar-cita-mobile a:active {
   background-color: #FFFFFF;
   color: #70707070;
   border: 1px solid #70707070;
+}
+
+.nav-agendar-cita-mobile {
+  margin-bottom: 20px; /* Añade margen inferior para separar del borde del contenedor */
 }
 
 .dropdown-menu {
@@ -156,6 +166,7 @@
     width: 100%;
     background-color: #FFFFFF;
     overflow-x: hidden; /* Evita el desbordamiento lateral */
+    max-width: 100%; /* Asegura que el menú no exceda el ancho del contenedor */
   }
 
   .nav-menu.active {
