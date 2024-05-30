@@ -3,7 +3,7 @@ import './Navbar.css';
 import logo from '../../img/navbar/logo_sin_letra.png';
 import mesafarq from '../../img/navbar/logo_letra.png';
 import { NavLink } from 'react-router-dom';
-import { List } from "@phosphor-icons/react";
+import { List, X } from "@phosphor-icons/react";
 
 const Navbar = () => {
   const [isDropdownVisible, setIsDropdownVisible] = useState(false);
@@ -56,21 +56,6 @@ const Navbar = () => {
         <li onClick={() => handleMenuClick('Servicios')}>
           <NavLink to="/servicios" activeClassName="active">Servicios</NavLink>
         </li>
-        <li className='nav-dropdown' onMouseLeave={() => setIsDropdownVisible(false)}>
-          <div onClick={() => handleMenuClick('Mas')}>
-            Más
-            {isDropdownVisible && (
-              <ul className='dropdown-menu'>
-                <li onClick={() => handleMenuClick('Blog')}>
-                  <NavLink to="/blog" activeClassName="active">Blog</NavLink>
-                </li>
-                <li onClick={() => handleMenuClick('FAQ')}>
-                  <NavLink to="/faq" activeClassName="active">FAQ</NavLink>
-                </li>
-              </ul>
-            )}
-          </div>
-        </li>
         {isMobile && (
           <li className="nav-agendar-cita" onClick={() => window.location.href='https://api.whatsapp.com/send/?phone=%2B51982053098&text&type=phone_number&app_absent=0'}>
             <a>Agende una cita</a>
@@ -84,7 +69,9 @@ const Navbar = () => {
       )}
       {isMobile && (
         <div className={`nav-hamburger ${isMobileMenuVisible ? "active" : ""}`} onClick={toggleMobileMenu}>
-          <div className="hamburger-icon"><List size={32} color="#FFFFFF" /></div>
+          <div className="hamburger-icon">
+            {isMobileMenuVisible ? <X size={32} color="#FFFFFF" /> : <List size={32} color="#FFFFFF" />}
+          </div>
         </div>
       )}
     </div>

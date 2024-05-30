@@ -1,60 +1,98 @@
 .footer {
-    background-color: #222222; /* Fondo negro */
-    color: #fff; /* Texto en blanco */
-    padding: 40px 40px; /* Padding para el contenido del footer */
-    bottom: 0;
-    font-family: 'Poppins';
-  }
-  .footer-logo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  background-color: #222222; /* Fondo negro */
+  color: #fff; /* Texto en blanco */
+  padding: 40px 40px; /* Padding para el contenido del footer */
+  bottom: 0;
+  font-family: 'Poppins';
 }
-  
-  .footer-logo img {
-    width: 60px; /* Ajusta el tamaño según tu necesidad */
-    height: auto;
-    filter: brightness(0) invert(1); /* Para cambiar el color a blanco */
+
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-logo img {
+  width: 60px; /* Ajusta el tamaño según tu necesidad */
+  height: auto;
+  filter: brightness(0) invert(1); /* Para cambiar el color a blanco */
 }
 
 .footer-texto-logo img {
-    width: 180px; /* Ajusta el tamaño según tu necesidad */
-    height: auto;
-    filter: brightness(0) invert(1); /* Para cambiar el color a blanco */
+  width: 180px; /* Ajusta el tamaño según tu necesidad */
+  height: auto;
+  filter: brightness(0) invert(1); /* Para cambiar el color a blanco */
 }
 
 .footer-rights {
-    margin-top: 10px; /* Ajusta el margen según tu necesidad */
-    color: white; /* Asegura que el texto sea visible si tienes un fondo oscuro */
+  margin-top: 10px; /* Ajusta el margen según tu necesidad */
+  color: white; /* Asegura que el texto sea visible si tienes un fondo oscuro */
 }
-  
+
+.footer-content {
+  display: flex; /* Usar flexbox para alinear el contenido */
+  justify-content: space-between; /* Espacio entre los elementos */
+  align-items: center; /* Alinear verticalmente */
+  max-width: 1200px; /* Ancho máximo del contenido */
+  margin: 0 auto; /* Centrar el contenido */
+}
+
+.footer-links {
+  display: flex; /* Usar flexbox para los enlaces */
+  gap: 20px; /* Espacio entre los enlaces */
+}
+
+.footer-links a {
+  color: #fff; /* Texto en blanco */
+  text-decoration: none; /* No subrayado */
+}
+
+.footer-links a:hover {
+  text-decoration: underline; /* Subrayado al pasar el mouse */
+}
+
+.footer-links .enlace {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  gap: 5px;
+}
+
+/* Estilos responsivos para pantallas con un ancho máximo de 1024px */
+@media (max-width: 1024px) {
   .footer-content {
-    display: flex; /* Usar flexbox para alinear el contenido */
-    justify-content: space-between; /* Espacio entre los elementos */
-    align-items: center; /* Alinear verticalmente */
-    max-width: 1200px; /* Ancho máximo del contenido */
-    margin: 0 auto; /* Centrar el contenido */
+    flex-direction: column; /* Cambia la dirección del flex a columna */
+    text-align: center; /* Centra el texto */
+  }
+
+  .footer-logo {
+    margin-bottom: 20px; /* Añade espacio debajo del logo */
   }
 
   .footer-links {
-    display: flex; /* Usar flexbox para los enlaces */
-    gap: 20px; /* Espacio entre los enlaces */
+    justify-content: center; /* Centra los enlaces */
+    gap: 10px; /* Reduce el espacio entre los enlaces */
   }
-  
-  .footer-links a {
-    color: #fff; /* Texto en blanco */
-    text-decoration: none; /* No subrayado */
-  }
-  
-  .footer-links a:hover {
-    text-decoration: underline; /* Subrayado al pasar el mouse */
+}
+
+/* Estilos responsivos para pantallas con un ancho máximo de 768px */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column; /* Cambia la dirección del flex a columna */
+    text-align: center; /* Centra el texto */
   }
 
-  .footer-links .enlace{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    gap: 5px;
+  .footer-logo {
+    margin-bottom: 20px; /* Añade espacio debajo del logo */
   }
-  
+
+  .footer-links {
+    flex-direction: column; /* Cambia la dirección del flex a columna */
+    gap: 10px; /* Reduce el espacio entre los enlaces */
+  }
+
+  .footer-rights {
+    margin-top: 20px; /* Añade margen superior para separar el texto */
+  }
+}

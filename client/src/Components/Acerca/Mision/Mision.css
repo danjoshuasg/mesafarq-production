@@ -1,34 +1,36 @@
-.mision-contenedor {
+.mision-contenedor, .vision-contenedor {
+  min-height: 40vh;
   display: flex;
-  justify-content: center; /* Centra horizontalmente en el contenedor flex */
-  align-items: center; /* Centra verticalmente en el contenedor flex */
-  flex-direction: column;
-  height: 50vh; /* O cualquier altura que quieras para llenar la pantalla o el área deseada */
+  flex-wrap: wrap; /* Permite que los elementos se ajusten si no hay suficiente espacio */
+  font-family: 'Poppins';
   border-bottom: 0.05em solid #70707070;
   margin-bottom: 5%;
   padding-bottom: 20px; /* Añadir padding para crear espacio entre el contenido y el borde */
+  overflow: hidden; /* Evita desbordamiento */
+  width: 100%; /* Asegura que el contenedor ocupe el 100% del ancho */
 }
 
-.mision {
+.mision, .vision {
   display: flex;
   justify-content: center; /* Centra los elementos hijos (si hay más de uno) horizontalmente dentro de .mision */
   flex-direction: column;
   align-items: center; /* Centra los elementos hijos (si hay más de uno) verticalmente dentro de .mision */
   text-align: center;
   font-family: 'Poppins';
-  width: 50%; /* O el ancho que prefieras */
+  width: 100%; /* O el ancho que prefieras */
   max-width: 600px; /* O el ancho máximo que prefieras */
   margin: auto; /* Esto añade margen automático en todos los lados, contribuyendo al efecto de centrado */
+  box-sizing: border-box; /* Incluye padding en el ancho total */
 }
 
-.mision h2 {
+.mision h2, .vision h2 {
   color: #333333;
   font-size: 40px;
   font-weight: 700;
   margin-bottom: 20px; /* Añadir margen inferior para separar el título del párrafo */
 }
 
-.mision p {
+.mision p, .vision p {
   color: #707070;
   font-size: 20px;
   font-weight: 400;
@@ -36,27 +38,27 @@
 
 /* Estilos responsivos para pantallas con un ancho máximo de 1024px */
 @media (max-width: 1024px) {
-  .mision h2 {
+  .mision h2, .vision h2 {
     font-size: 32px;
   }
 
-  .mision p {
+  .mision p, .vision p {
     font-size: 18px;
   }
 }
 
 /* Estilos responsivos para pantallas con un ancho máximo de 768px */
 @media (max-width: 768px) {
-  .mision {
+  .mision, .vision {
     width: 80%;
     max-width: none;
   }
 
-  .mision h2 {
+  .mision h2, .vision h2 {
     font-size: 24px;
   }
 
-  .mision p {
+  .mision p, .vision p {
     font-size: 16px;
   }
 }
