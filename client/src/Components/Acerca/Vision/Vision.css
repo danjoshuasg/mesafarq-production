@@ -6,6 +6,8 @@
     height: 50vh; /* O cualquier altura que quieras para llenar la pantalla o el área deseada */
     border-bottom: 0.05em solid #70707070;
     margin-bottom: 5%;
+    padding-bottom: 5%;
+    padding-top: 5%;
   }
   
   .vision {

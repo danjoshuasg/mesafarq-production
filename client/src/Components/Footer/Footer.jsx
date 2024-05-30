@@ -16,7 +16,7 @@ const FooterLink = ({ Icon, url, children }) => (
 const links = [
   { Icon: FacebookLogo, url: "https://www.facebook.com/mesafarq", children: "Facebook" },
   { Icon: EnvelopeSimple, url: "mailto:venta@mesafarq.pe", children: "Correo" },
-  { Icon: WhatsappLogo, url: "mailto:info@mesafarq.pe", children: "Whatsapp" },
+  { Icon: WhatsappLogo, url: "https://api.whatsapp.com/send/?phone=%2B51982053098&text&type=phone_number&app_absent=0", children: "Whatsapp" },
 ];
 
 const Footer = () => {

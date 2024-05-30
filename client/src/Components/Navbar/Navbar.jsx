@@ -2,17 +2,15 @@ import React, { useState, useEffect } from 'react';
 import './Navbar.css';
 import logo from '../../img/navbar/logo_sin_letra.png';
 import mesafarq from '../../img/navbar/logo_letra.png';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { List } from "@phosphor-icons/react";
 
 const Navbar = () => {
-  const [menu, setMenu] = useState("Inicio");
   const [isDropdownVisible, setIsDropdownVisible] = useState(false);
   const [isMobileMenuVisible, setIsMobileMenuVisible] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
   const handleMenuClick = (menuName) => {
-    setMenu(menuName);
     if (menuName !== "Mas") {
       setIsDropdownVisible(false);
     } else {
@@ -46,16 +44,29 @@ const Navbar = () => {
       </div>
 
       <ul className={`nav-menu ${isMobileMenuVisible ? "active" : ""}`}>
-        <li onClick={() => handleMenuClick('Inicio')}><Link to="/">Inicio</Link>{menu === "Inicio" ? <hr/> : null}</li>
-        <li onClick={() => handleMenuClick('Acerca')}><Link to="/acerca">Acerca</Link>{menu === "Acerca" ? <hr/> : null}</li>
-        <li onClick={() => handleMenuClick('Productos')}><Link to="/productos">Productos</Link>{menu === "Productos" ? <hr/> : null}</li>
-        <li onClick={() => handleMenuClick('Servicios')}><Link to="/servicios">Servicios</Link>{menu === "Servicios" ? <hr/> : null}</li>
+        <li onClick={() => handleMenuClick('Inicio')}>
+          <NavLink to="/" exact activeClassName="active">Inicio</NavLink>
+        </li>
+        <li onClick={() => handleMenuClick('Acerca')}>
+          <NavLink to="/acerca" activeClassName="active">Acerca</NavLink>
+        </li>
+        <li onClick={() => handleMenuClick('Productos')}>
+          <NavLink to="/productos" activeClassName="active">Productos</NavLink>
+        </li>
+        <li onClick={() => handleMenuClick('Servicios')}>
+          <NavLink to="/servicios" activeClassName="active">Servicios</NavLink>
+        </li>
         <li className='nav-dropdown' onMouseLeave={() => setIsDropdownVisible(false)}>
-          <div onClick={() => handleMenuClick('Mas')}>Más{menu === "Mas" ? <hr /> : null}
+          <div onClick={() => handleMenuClick('Mas')}>
+            Más
             {isDropdownVisible && (
               <ul className='dropdown-menu'>
-                <li onClick={() => handleMenuClick('Blog')}><Link to="/blog">Blog</Link></li>
-                <li onClick={() => handleMenuClick('FAQ')}><Link to="/faq">FAQ</Link></li>
+                <li onClick={() => handleMenuClick('Blog')}>
+                  <NavLink to="/blog" activeClassName="active">Blog</NavLink>
+                </li>
+                <li onClick={() => handleMenuClick('FAQ')}>
+                  <NavLink to="/faq" activeClassName="active">FAQ</NavLink>
+                </li>
               </ul>
             )}
           </div>

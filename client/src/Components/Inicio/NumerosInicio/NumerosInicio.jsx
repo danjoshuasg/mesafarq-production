@@ -1,6 +1,7 @@
 import React from 'react';
 import CountUp from 'react-countup';
 import './NumerosInicio.css';
+import { Link } from 'react-router-dom';
 
 const NumerosInicio = () => {
   return (
@@ -20,7 +21,9 @@ const NumerosInicio = () => {
         </div>
       </div>
       <div className="button-container">
-        <button>Ver más</button>
+        <Link to="/Productos">
+            <button>Ver más</button>
+        </Link>
       </div>
     </div>
   );

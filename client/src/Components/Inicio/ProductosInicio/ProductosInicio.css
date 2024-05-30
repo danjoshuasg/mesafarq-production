@@ -20,17 +20,31 @@
 .ProductoInicio {
   width: 20%; /* Reducido para hacer las tarjetas más delgadas */
   padding: 20px; /* Reducido para disminuir la separación interna */
-  text-align: left;
+  text-align: center;
   background-color: #f2f2f2;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin: 10px; /* Añade un margen para separar las tarjetas cuando estén juntas */
 }
 
+.icono-contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px; /* Espacio entre el ícono y el título */
+}
+.producto-icono {
+  margin-bottom: 10px; /* Espacio entre el ícono y el título */
+}
+
 .ProductoInicio h3 {
   color: #333333;
   font-size: 20px; /* 'size' se cambió a 'font-size', que es la propiedad correcta */
   text-align: center; /* Esta línea centra el texto de los h3 */
+  margin-top: 0; /* Elimina el margen superior si es necesario */
+}
+.texto-contenedor {
+  margin-top: 10px; /* Espacio entre el título y la descripción */
 }
 
 .ProductoInicio .texto-contenedor {

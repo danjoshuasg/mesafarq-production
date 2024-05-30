@@ -39,7 +39,11 @@
     text-decoration: none;
     color: #404040;
   }
-  
+  .nav-menu a.active {
+    border-bottom: 2px solid #404040; /* Ejemplo de estilo para la línea debajo de la pestaña activa */
+    color: #404040; /* Cambia el color del texto si es necesario */
+  }
+
   .nav-menu a:hover {
     color: #707070;
   }

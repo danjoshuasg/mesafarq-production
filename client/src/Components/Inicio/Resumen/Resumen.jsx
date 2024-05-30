@@ -1,5 +1,6 @@
 import React from 'react';
 import './Resumen.css';
+import { Link } from 'react-router-dom';
 import Imagen_resumen from '../../Assets/imagen_resumen.png';
 
 const Resumen = () => {
@@ -13,7 +14,9 @@ const Resumen = () => {
           </div>
         </div>
         <div className="conocenos-btn">
-          <button> Conócenos </button>
+          <Link to="/acerca">
+            <button> Conócenos </button>
+          </Link>
         </div>
       </div>
       <div className="resumen-right">

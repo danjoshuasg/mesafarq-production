@@ -1,5 +1,7 @@
 import React from 'react';
 import './ServiciosInicio.css';
+import { Link } from 'react-router-dom';
+
 import ConsultoriaFarmaceutica_img from '../../../img/servicios/ConsultoriaFarmaceutica.png';
 import CalificacionEquipos_img from '../../../img/servicios/CalificacionEquipos.png';
 import CalificacionSalas_img from '../../../img/servicios/CalificacionSalas.png';
@@ -44,7 +46,9 @@ const ServiciosInicio = () => {
               <div className="contenedor-descripcion">
                 <p>{servicio.descripcion}</p>
               </div>
-              <button className="leer-mas">Leer más</button>
+              <Link to="/Servicios">
+                <button className="leer-mas">Leer más</button>
+              </Link>
             </div>
           </div>
         ))}

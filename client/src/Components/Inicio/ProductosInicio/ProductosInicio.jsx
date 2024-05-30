@@ -1,6 +1,7 @@
 import React from 'react';
 import './ProductosInicio.css';
-import { Pill, Dna, Stethoscope } from "@phosphor-icons/react/dist/ssr";
+import { Tooth, WashingMachine, PawPrint, Thermometer } from "@phosphor-icons/react/dist/ssr";
+
 import Producto from './Producto';
 
 function ProductosInicio() {
@@ -16,16 +17,28 @@ function ProductosInicio() {
           description='Los fármacos abarcan medicamentos de prescripción, vacunas, productos de venta libre, vitaminas, y equipamiento para la dispensación y almacenamiento de fármacos, esenciales para una farmacia efectiva y completa.' 
         /> */}
         <Producto 
-          icon={Dna} 
+          icon={WashingMachine} 
           color='#A2A2B0' 
-          title='Insumos clínicos' 
-          description='Los insumos clínicos indispensables incluyen soluciones para análisis clínicos, indicadores, colorantes para muestras, y sustancias para pruebas diagnósticas, cruciales para laboratorios y diagnósticos precisos.' 
+          title='Esterilización y Limpieza' 
+          description='Se tienen equipos y materiales para la estirilización y limpieza de espacios de salud' 
         />
         <Producto 
-          icon={Stethoscope} 
+          icon={Tooth} 
           color='#A2A2B0' 
-          title='Suministros médicos' 
-          description='Los suministros médicos esenciales incluyen guantes desechables, mascarillas, jeringas, vendas, desinfectantes, y equipos de diagnóstico como estetoscopios y tensiómetros, cruciales para una atención sanitaria segura y eficaz.' 
+          title='Equipos y materiales dentales' 
+          description='Se tienen equipos y materiales para la implementación de consultorios odontológicos' 
+        />
+        <Producto 
+          icon={PawPrint} 
+          color='#A2A2B0' 
+          title='Equipos y materiales veterinarios' 
+          description='Se tienen equipos y materiales para la implementación de salas veterinarias' 
+        />
+        <Producto 
+          icon={Thermometer} 
+          color='#A2A2B0' 
+          title='Instrumentos de medición' 
+          description='Se tienen instrumentos para la medición del ambiente en salas y laboratorios' 
         />
       </div>
     </div>
