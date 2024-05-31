@@ -1,0 +1,107 @@
+.contenedor-consultorias-farmaceuticas {
+    min-height: 40vh;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Poppins';
+    border-bottom: 0.05em solid #70707070;
+}
+
+.consultorias-farmaceuticas-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 40vh;
+}
+
+.consultorias-farmaceuticas-left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.consultorias-farmaceuticas-right {
+    margin-top: 5%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    gap: 20px;
+    padding: 0 100px;
+    line-height: 1.2;
+    margin-bottom: 5%;
+}
+
+.consultorias-farmaceuticas-right h2 {
+    color: #333333;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.consultorias-farmaceuticas-right p {
+    color: #707070;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.btn-ver-servicios {
+    width: 100px;
+    height: 35px;
+    outline: none;
+    border: 1px solid #222222;
+    border-radius: 8px;
+    color: #FFFFFF;
+    font-family: 'Poppins';
+    font-size: 12px;
+    font-weight: 500;
+    background: #222222;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px #8890917c;
+    margin: 20px 0;
+}
+
+.btn-ver-servicios:hover {
+    transform: scale(1.07);
+}
+
+.btn-ver-servicios:active {
+    background-color: #FFFFFF;
+    color: #222222;
+    border: 1px solid #222222;
+}
+
+/* Media Queries para diseño responsivo */
+@media (max-width: 1024px) {
+    .consultorias-farmaceuticas-right, .consultorias-farmaceuticas-left {
+        padding: 0 50px;
+    }
+
+    .consultorias-farmaceuticas-right h2 {
+        font-size: 35px;
+    }
+
+    .consultorias-farmaceuticas-right p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .consultorias-farmaceuticas-right, .consultorias-farmaceuticas-left {
+        padding: 0 20px;
+    }
+
+    .consultorias-farmaceuticas-right h2 {
+        font-size: 30px;
+    }
+
+    .consultorias-farmaceuticas-right p {
+        font-size: 13px;
+    }
+
+    .btn-ver-servicios {
+        width: 90px;
+        height: 30px;
+        font-size: 11px;
+    }
+}

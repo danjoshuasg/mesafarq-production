@@ -36,8 +36,9 @@ import p35_img from './producto_35.png'
 import p36_img from './producto_36.png'
 import p37_img from './producto_37.png'
 
-import termohigrometro from './termohigrometro.png'
-
+import RC5 from './RC5.png'
+import SSNP10ED from './SSNP10ED.jpg'
+import GM1365 from './GM1365.png'
 
 let data_product =[
     {
@@ -341,9 +342,23 @@ let data_product =[
     },
     {
         id:38,
-        name: "Termohigrómetro",
-        specifications: "Medir la temperatura ",
-        image: termohigrometro,
+        name: "Termohigrómetro - Modelo RC5",
+        specifications: "Elitech, mide la temperatura y la humedad relativa del ambiente, Rango: -30°C a +70°C, ",
+        image: RC5,
+        type: "Instrumentos de medición"
+    },
+    {
+        id:40,
+        name: "Termohigrómetro - GM1365",
+        specifications: "Benetech, mide la temperatura y la humedad relativa del ambiente, Rango: : -30°C – +80°C, Humedad: 0 - 100%, Memoria: 32256, Energía: 1/2AA 3.6V",
+        image: GM1365,
+        type: "Instrumentos de medición"
+    },
+    {
+        id:41,
+        name: "Sensor externo - SSNP-10ED",
+        specifications: "Elitech, mide la temperatur del ambiente, Rango:: -40°C – 125°C, Resolución: 0.1°C",
+        image: SSNP10ED,
         type: "Instrumentos de medición"
     },
 

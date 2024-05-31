@@ -1,14 +1,17 @@
 import React from 'react'
-import ControlCalidad from '../Components/Servicios/ControlCalidad/ControlCalidad'
-import GestionCadena from '../Components/Servicios/GestionCadena/GestionCadena.jsx';
-import Testimonios from '../Components/Servicios/Testimonios/Testimonios.jsx';
+import ConsultoriasFarmaceuticas from '../Components/Servicios/ConsultoriasFarmaceuticas/ConsultoriasFarmaceuticas.jsx';
+import CalificacionSalas from '../Components/Servicios/CalificacionSalas/CalificacionSalas.jsx';
+import MapeoTermico from '../Components/Servicios/MapeoTermico/MapeoTermico.jsx';
+import CalificacionEquipos from '../Components/Servicios/CalificacionEquipos/CalificacionEquipos.jsx';
+
 
 const Servicios  = () => {
   return (
     <div className="">
-      <ControlCalidad/>
-      <GestionCadena/>
-      {/*<Testimonios/>*/}
+      <ConsultoriasFarmaceuticas/>
+      <CalificacionSalas/>
+      <MapeoTermico/>
+      <CalificacionEquipos/>
     </div>
 
   )

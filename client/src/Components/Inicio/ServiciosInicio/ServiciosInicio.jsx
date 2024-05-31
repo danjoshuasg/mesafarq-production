@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import ConsultoriaFarmaceutica_img from '../../../img/servicios/ConsultoriaFarmaceutica.png';
 import CalificacionEquipos_img from '../../../img/servicios/CalificacionEquipos.png';
 import CalificacionSalas_img from '../../../img/servicios/CalificacionSalas.png';
-import MapeosTermicos_img from '../../../img/servicios/MapeosTérmicos.png';
+import MapeosTermicos_img from '../../../img/servicios/MapeoTermico.png';
 
 const ServiciosInicio = () => {
   const servicios = [
