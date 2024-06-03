@@ -7,7 +7,7 @@ import Imagen from '../../../img/servicios/CalificacionEquipos.png';
 // Contenido de tu archivo Markdown
 const markdownContent = `# Calificación de Equipos de Laboratorio y Clínicos
 
-En Mesafarq, ofrecemos servicios especializados en la calificación de equipos de laboratorio y clínicos para asegurar que cumplan con los estándares de calidad y regulaciones vigentes. Nuestro objetivo es garantizar que sus equipos operen con la máxima precisión y seguridad.
+En MESAFARQ, ofrecemos servicios especializados en la calificación de equipos de laboratorio y clínicos para asegurar que cumplan con los estándares de calidad y regulaciones vigentes. Nuestro objetivo es garantizar que sus equipos operen con la máxima precisión y seguridad.
 
 ## Nuestros Servicios
 
@@ -23,10 +23,6 @@ En Mesafarq, ofrecemos servicios especializados en la calificación de equipos d
 - Verificamos que los equipos cumplan con los criterios de desempeño en condiciones reales de uso.
 - Realizamos estudios de estabilidad y reproducibilidad para asegurar resultados consistentes.
 
-### Validación de Procesos
-- Validamos los procesos asociados con el uso de los equipos para garantizar la integridad y calidad de los resultados.
-- Implementamos protocolos de validación y realizamos análisis detallados.
-
 ### Gestión de Documentación
 - Mantenemos y gestionamos toda la documentación necesaria para cumplir con las normativas de calificación.
 - Proporcionamos informes detallados y certificados de calificación.
@@ -36,7 +32,7 @@ En Mesafarq, ofrecemos servicios especializados en la calificación de equipos d
 - Brindamos soporte técnico continuo para resolver cualquier inconveniente.
 
 ## Compromiso con la Calidad
-En Mesafarq, estamos comprometidos con la excelencia en la calificación de equipos para el sector salud. Confíe en nosotros para asegurar que sus equipos cumplen con los más altos estándares de calidad y regulaciones.
+En MESAFARQ, estamos comprometidos con la excelencia en la calificación de equipos para el sector salud. Confíe en nosotros para asegurar que sus equipos cumplen con los más altos estándares de calidad y regulaciones.
 
 Su aliado estratégico en la calificación de equipos de laboratorio y clínicos.`;
 
@@ -50,6 +46,7 @@ function CalificacionEquipos() {
             </div>
             <div className="calificacion-equipos-right">
                 <h2>Calificación de Equipos</h2>
+                <p>En MESAFARQ, sabemos lo crucial que es la calificación de equipos en el ámbito de laboratorio y clínico. Nuestro compromiso es garantizar que sus equipos operen con la máxima precisión y seguridad, cumpliendo con los estándares de calidad y regulaciones vigentes. Ofrecemos servicios integrales que incluyen la calificación de instalación, operación y desempeño, así como la gestión completa de la documentación y programas de capacitación. Confíe en nosotros como su aliado estratégico para mantener la excelencia y la fiabilidad en sus procesos.</p>
                 <button className="btn-ver-servicios" onClick={() => setIsModalOpen(true)}>Ver detalles</button>
             </div>
             <Modal isOpen={isModalOpen} close={() => setIsModalOpen(false)}>

@@ -20,7 +20,7 @@ function ProductosInicio() {
           icon={WashingMachine} 
           color='#A2A2B0' 
           title='Esterilización y Limpieza' 
-          description='Se tienen equipos y materiales para la estirilización y limpieza de espacios de salud' 
+          description='Se tienen equipos y materiales para la esterilización y limpieza de espacios de salud' 
         />
         <Producto 
           icon={Tooth} 

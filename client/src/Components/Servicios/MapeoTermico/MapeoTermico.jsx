@@ -6,7 +6,7 @@ import Imagen from '../../../img/servicios/MapeoTermico.png';
 // Contenido de tu archivo Markdown
 const markdownContent = `# Mapeo Térmico
 
-En Mesafarq, ofrecemos servicios de mapeo térmico para asegurar la integridad y calidad de los productos farmacéuticos y médicos durante su almacenamiento y transporte. Utilizamos tecnología avanzada para monitorear y analizar las condiciones térmicas de sus instalaciones y vehículos.
+En MESAFARQ, ofrecemos servicios de mapeo térmico para asegurar la integridad y calidad de los productos farmacéuticos y médicos durante su almacenamiento y transporte. Utilizamos tecnología avanzada para monitorear y analizar las condiciones térmicas de sus instalaciones y vehículos.
 
 ## Nuestros Servicios
 
@@ -31,7 +31,7 @@ En Mesafarq, ofrecemos servicios de mapeo térmico para asegurar la integridad y
 - Proporcionamos consultoría especializada para mejorar sus procesos de control térmico.
 
 ## Compromiso con la Excelencia
-En Mesafarq, estamos comprometidos con la excelencia en nuestros servicios de mapeo térmico. Confíe en nosotros para asegurar que sus productos se mantengan en condiciones óptimas y cumplan con las normativas de calidad.
+En MESAFARQ, estamos comprometidos con la excelencia en nuestros servicios de mapeo térmico. Confíe en nosotros para asegurar que sus productos se mantengan en condiciones óptimas y cumplan con las normativas de calidad.
 
 Su aliado estratégico en mapeo térmico y control de calidad.`;
 
@@ -45,6 +45,7 @@ function MapeoTermico() {
             </div>
             <div className="mapeo-termico-right">
                 <h2>Mapeo Térmico</h2>
+                <p>En MESAFARQ, ofrecemos servicios avanzados de mapeo térmico para garantizar la calidad e integridad de sus productos farmacéuticos y médicos durante el almacenamiento y transporte. Utilizamos tecnología de punta para monitorear y analizar las condiciones térmicas de sus instalaciones y vehículos, asegurando que sus productos se mantengan en condiciones óptimas. Nuestros servicios incluyen evaluación de instalaciones, monitoreo de temperatura, análisis de datos, validación de equipos, y capacitación y consultoría especializada. Confíe en MESAFARQ como su aliado estratégico en el control de calidad y gestión térmica.</p>
                 <button className="btn-ver-servicios" onClick={() => setIsModalOpen(true)}>Ver detalles</button>
             </div>
             <Modal isOpen={isModalOpen} close={() => setIsModalOpen(false)}>

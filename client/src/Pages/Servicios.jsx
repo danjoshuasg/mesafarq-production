@@ -3,6 +3,7 @@ import ConsultoriasFarmaceuticas from '../Components/Servicios/ConsultoriasFarma
 import CalificacionSalas from '../Components/Servicios/CalificacionSalas/CalificacionSalas.jsx';
 import MapeoTermico from '../Components/Servicios/MapeoTermico/MapeoTermico.jsx';
 import CalificacionEquipos from '../Components/Servicios/CalificacionEquipos/CalificacionEquipos.jsx';
+import ValidacionProcesos from '../Components/Servicios/ValidacionProcesos/ValidacionProcesos.jsx';
 
 
 const Servicios  = () => {
@@ -12,6 +13,7 @@ const Servicios  = () => {
       <CalificacionSalas/>
       <MapeoTermico/>
       <CalificacionEquipos/>
+      <ValidacionProcesos/>
     </div>
 
   )

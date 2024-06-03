@@ -99,6 +99,11 @@
         font-size: 13px;
     }
 
+    .calificacion-salas-left img {
+        width: 100%;
+        height: auto;
+    }
+
     .btn-ver-servicios {
         width: 90px;
         height: 30px;

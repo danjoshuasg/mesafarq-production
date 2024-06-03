@@ -7,7 +7,7 @@ import Imagen from '../../../img/servicios/ConsultoriaFarmaceutica.png';
 // Contenido de tu archivo Markdown
 const markdownContent = `# Consultorías Farmacéuticas
 
-En Mesafarq, ofrecemos servicios especializados en consultorías farmacéuticas para apoyar a las empresas en la industria de los medicamentos. Nuestro objetivo es garantizar que los productos farmacéuticos cumplan con las normativas y estándares de calidad más estrictos.
+En MESAFARQ, ofrecemos servicios especializados en consultorías farmacéuticas para apoyar a las empresas en la industria de los medicamentos. Nuestro objetivo es garantizar que los productos farmacéuticos cumplan con las normativas y estándares de calidad más estrictos.
 
 ## Nuestros Servicios
 
@@ -35,8 +35,14 @@ En Mesafarq, ofrecemos servicios especializados en consultorías farmacéuticas 
 - Proporcionamos asesoramiento en asuntos regulatorios para la comercialización de productos farmacéuticos.
 - Ayudamos en la interpretación y aplicación de normativas locales e internacionales.
 
+### Verificación de las Buenas Prácticas de Manufactura
+
+- Evaluar y asegurar que los procesos de manufactura de una empresa cumplan con los estándares de calidad y regulaciones vigentes. 
+- Inspección detallada de instalaciones, equipos y procedimientos para garantizar la producción de productos seguros y efectivos. 
+- Se proporcionará recomendaciones para mejorar la eficiencia y cumplir con las normativas de la industria, asegurando la calidad y seguridad del producto final.
+
 ## Compromiso con la Excelencia
-En Mesafarq, estamos comprometidos con la excelencia en nuestras consultorías farmacéuticas. Confíe en nosotros para asegurar que sus productos farmacéuticos cumplan con los más altos estándares de calidad y regulaciones.
+En MESAFARQ, estamos comprometidos con la excelencia en nuestras consultorías farmacéuticas. Confíe en nosotros para asegurar que sus productos farmacéuticos cumplan con los más altos estándares de calidad y regulaciones.
 
 Su aliado estratégico en consultorías farmacéuticas.`;
 
@@ -50,6 +56,7 @@ function ConsultoriasFarmaceuticas() {
             </div>
             <div className="consultorias-farmaceuticas-right">
                 <h2>Consultorías Farmacéuticas</h2>
+                <p>En MESAFARQ, ofrecemos consultorías especializadas para apoyar a las empresas en la industria farmacéutica. Nuestro objetivo es garantizar que sus productos farmacéuticos cumplan con las normativas y estándares de calidad más estrictos. Ofrecemos servicios integrales que incluyen el desarrollo y validación de métodos analíticos, gestión de documentación regulatoria, auditoría y certificación de proveedores, control de calidad en la producción, capacitación y desarrollo del personal, consultoría en asuntos regulatorios y verificación de las buenas prácticas de manufactura. Confíe en MESAFARQ como su aliado estratégico en consultorías farmacéuticas.</p>
                 <button className="btn-ver-servicios" onClick={() => setIsModalOpen(true)}>Ver detalles</button>
             </div>
             <Modal isOpen={isModalOpen} close={() => setIsModalOpen(false)}>

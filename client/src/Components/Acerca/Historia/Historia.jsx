@@ -1,6 +1,6 @@
 import React from 'react';
 import './Historia.css';
-import Imagen_resumen from '../../Assets/Historia/MesaFarq.png';
+import Imagen_resumen from '../../Assets/Historia/Historia-mesafarq.png';
 
 function Historia() {
   return (

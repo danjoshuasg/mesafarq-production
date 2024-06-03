@@ -1,58 +1,61 @@
 .Catalogo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 10%;
-    font-family: 'Poppins';
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10%;
+  font-family: 'Poppins';
+}
+
+.Catalogo h1 {
+  color: #333333;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.Catalogo hr {
+  width: 200px;
+  height: 6px;
+  border-radius: 10px;
+  background-color: #333333;
+}
+
+.Catalogo-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 50px;
+  gap: 30px;
+}
+
+/* Estilos responsivos para pantallas con un ancho máximo de 1024px */
+@media (max-width: 1024px) {
   .Catalogo h1 {
-    color: #333333;
-    font-size: 40px;
-    font-weight: 700;
+    font-size: 48px;
   }
-  
-  .Catalogo hr {
-    width: 200px;
-    height: 6px;
-    border-radius: 10px;
-    background-color: #333333;
-  }
-  
+
   .Catalogo-item {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin-top: 50px;
-    gap: 30px;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
   }
-  
-  /* Estilos responsivos para pantallas con un ancho máximo de 1024px */
-  @media (max-width: 1024px) {
-    .Catalogo h1 {
-      font-size: 48px;
-    }
-  
-    .Catalogo-item {
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
-    }
+}
+
+/* Estilos responsivos para pantallas con un ancho máximo de 768px */
+@media (max-width: 768px) {
+  .Catalogo {
+    justify-content: center;
   }
-  
-  /* Estilos responsivos para pantallas con un ancho máximo de 768px */
-  @media (max-width: 768px) {
-    .Catalogo h1 {
-      font-size: 36px;
-    }
-  
-    .Catalogo hr {
-      width: 150px;
-      height: 4px;
-    }
-  
-    .Catalogo-item {
-      grid-template-columns: 1fr;
-      gap: 15px;
-    }
+  .Catalogo h1 {
+    font-size: 36px;
+    text-align: center; /* Añadido para centrar el texto del h1 */
   }
-  
+
+  .Catalogo hr {
+    width: 150px;
+    height: 4px;
+  }
+
+  .Catalogo-item {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+}

@@ -6,6 +6,7 @@ import ConsultoriaFarmaceutica_img from '../../../img/servicios/ConsultoriaFarma
 import CalificacionEquipos_img from '../../../img/servicios/CalificacionEquipos.png';
 import CalificacionSalas_img from '../../../img/servicios/CalificacionSalas.png';
 import MapeosTermicos_img from '../../../img/servicios/MapeoTermico.png';
+import ValidacionProcesos_img from '../../../img/servicios/ValidacionProcesos.png';
 
 const ServiciosInicio = () => {
   const servicios = [
@@ -29,6 +30,11 @@ const ServiciosInicio = () => {
       descripcion: 'Ofrecemos análisis detallado de la distribución de temperatura en instalaciones para optimizar el acondicionamiento y asegurar el cumplimiento de estándares de calidad y eficiencia energética.',
       imagen: MapeosTermicos_img
     },
+    {
+      nombre: "Validación de Procesos Farmacéuticos",
+      descripcion: "Brindamos servicios completos de validación de procesos en la industria farmacéutica, asegurando que cada etapa del proceso de fabricación cumpla con los estándares regulatorios y de calidad. Nuestra validación incluye pruebas rigurosas y documentación detallada para garantizar la consistencia y seguridad del producto final.",
+      imagen: ValidacionProcesos_img
+    }
     // Puedes añadir más servicios aquí
   ];
 
